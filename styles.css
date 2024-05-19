@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+  }
+  
+  h1 {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 500;
+  }
+  
+  body {
+    min-height: 100vh;
+    background-color: hsl(0, 0%, 8%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 400;
+    color: hsl(0, 0%, 100%);
+  }
+  
+  #container {
+    width: 375px;
+    background-color: hsl(0, 0%, 12%);
+    margin: 100px 0;
+    padding: 30px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #img-container {
+    height: 75px;
+    width: 75px;
+  }
+  
+  #img-container img {
+    height: 75px;
+    width: 75px;
+    overflow: hidden;
+    border-radius: 50%;
+  }
+  
+  #info-container {
+    margin: 15px 0;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #info-container p {
+    color: hsl(75, 94%, 57%);
+    margin-top: 5px;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  
+  #description {
+    margin-bottom: 20px;
+    padding: 0px 5px 5px 5px;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+  }
+  
+  #links-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .link-box {
+    background-color: hsl(0, 0%, 20%);
+    width: 300px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+  }
+  
+  .link-box:last-child {
+    margin-bottom: 8px;
+  }
+  
+  #links-container a {
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  
+  #links-container a:hover,
+  a:active {
+    color: hsl(0, 0%, 8%);
+    transition: 0.2s;
+    background-color: hsl(75, 94%, 57%);
+  }
+  
+  /* Responsive CSS */
+  
+  @media screen and (max-width: 375px) {
+    #container {
+      width: 325px;
+      padding: 20px;
+    }
+  
+    /* optional css */
+    h1 {
+      font-size: 22px;
+    }
+  
+    #img-container {
+      margin-top: 5px;
+    }
+  
+    #info-container {
+      margin: 10px 0;
+    }
+  
+    #info-container p {
+      margin-top: 6px;
+    }
+  
+    #description {
+      margin-bottom: 25px;
+      padding: 5px;
+    }
+  
+    .link-box {
+      padding: 15px;
+      margin-bottom: 20px;
+      width: 275px;
+    }
+  
+    .link-box:last-child {
+      margin-bottom: 10px;
+    }
+  
+    #links-container a:hover,
+    a:active {
+      color: hsl(0, 0%, 8%);
+      background-color: hsl(75, 94%, 57%);
+    }
+  }
